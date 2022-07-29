@@ -33,4 +33,4 @@ jobs:
             sync/dependabot/dependabot-actions.yml=.github/dependabot.yml
           TOKEN: ${{ secrets.ACTIONS }}
           GIT_USERNAME: jamesmoreton
-          GIT_USERNAME: james_moreton@hotmail.co.uk
+          GIT_EMAIL: james_moreton@hotmail.co.uk
