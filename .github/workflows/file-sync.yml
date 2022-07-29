@@ -23,3 +23,14 @@ jobs:
             sync/workflows/auto-dependabot.yml=.github/workflows/auto-dependabot.yml
           TOKEN: ${{ secrets.ACTIONS }}
           GIT_USERNAME: jamesmoreton
+
+      - name: Dependabot (Actions)
+        uses: kbrashears5/github-action-file-sync@v2.0.0
+        with:
+          REPOSITORIES: |
+            jamesmoreton/jamesmoreton@main
+          FILES: |
+            sync/dependabot/dependabot-actions.yml=.github/dependabot.yml
+          TOKEN: ${{ secrets.ACTIONS }}
+          GIT_USERNAME: jamesmoreton
+          GIT_USERNAME: james_moreton@hotmail.co.uk
