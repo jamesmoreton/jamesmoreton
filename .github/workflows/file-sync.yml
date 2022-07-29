@@ -22,3 +22,4 @@ jobs:
           FILES: |
             sync/workflows/auto-dependabot.yml=.github/workflows/auto-dependabot.yml
           TOKEN: ${{ secrets.ACTIONS }}
+          GIT_USERNAME: jamesmoreton
