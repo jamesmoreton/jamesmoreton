@@ -21,6 +21,8 @@ jobs:
             jamesmoreton/generate@master
             jamesmoreton/jamesmoreton@main
             jamesmoreton/remindee@main
+            jamesmoreton/tweet-gen@master
+            jamesmoreton/sandbox@master
           FILES: |
             sync/workflows/auto-dependabot.yml=.github/workflows/auto-dependabot.yml
           TOKEN: ${{ secrets.ACTIONS }}
@@ -30,6 +32,16 @@ jobs:
         with:
           REPOSITORIES: |
             jamesmoreton/jamesmoreton@main
+            jamesmoreton/tweet-gen@master
           FILES: |
             sync/dependabot/dependabot-actions.yml=.github/dependabot.yml
+          TOKEN: ${{ secrets.ACTIONS }}
+
+      - name: Dependabot (Actions & Maven)
+        uses: kbrashears5/github-action-file-sync@v2.2.0
+        with:
+          REPOSITORIES: |
+            jamesmoreton/sandbox@master
+          FILES: |
+            sync/dependabot/dependabot-actions-maven.yml=.github/dependabot.yml
           TOKEN: ${{ secrets.ACTIONS }}
