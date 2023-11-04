@@ -18,14 +18,6 @@ jobs:
         uses: kbrashears5/github-action-file-sync@v3.0.0
         with:
           REPOSITORIES: |
-            jamesmoreton/algorithms@master
-            jamesmoreton/appointment-finder@main
-            jamesmoreton/generate@master
-            jamesmoreton/grepr@main
-            jamesmoreton/jamesmoreton@main
-            jamesmoreton/remindee@main
-            jamesmoreton/tweet-gen@master
-            jamesmoreton/sandbox@master
           FILES: |
             sync/workflows/auto-dependabot.yml=.github/workflows/auto-dependabot.yml
           TOKEN: ${{ secrets.ACTIONS }}
@@ -34,8 +26,6 @@ jobs:
         uses: kbrashears5/github-action-file-sync@v3.0.0
         with:
           REPOSITORIES: |
-            jamesmoreton/jamesmoreton@main
-            jamesmoreton/tweet-gen@master
           FILES: |
             sync/dependabot/dependabot-actions.yml=.github/dependabot.yml
           TOKEN: ${{ secrets.ACTIONS }}
@@ -44,12 +34,6 @@ jobs:
         uses: kbrashears5/github-action-file-sync@v3.0.0
         with:
           REPOSITORIES: |
-            jamesmoreton/algorithms@master
-            jamesmoreton/appointment-finder@main
-            jamesmoreton/jax-rs-server@master
-            jamesmoreton/persistence@master
-            jamesmoreton/sandbox@master
-            jamesmoreton/spring-server@master
           FILES: |
             sync/dependabot/dependabot-actions-maven.yml=.github/dependabot.yml
           TOKEN: ${{ secrets.ACTIONS }}
